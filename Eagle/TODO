@@ -1,0 +1,11 @@
+TODO:
+add button to memory
+add 4 additional dip switches to MAR
+figure out way to reset registers
+add HALT to prgm in MAR and IO to pause clock
+Accumulator needs access to CE
+Add PRGM indicator LEDs to MAR
+
+Finish Clock
+Finish Accumulator
+Add ONE Register
