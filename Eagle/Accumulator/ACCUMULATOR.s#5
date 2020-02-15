@@ -255,19 +255,19 @@ Source: &lt;a href="http://componentsearchengine.com/Datasheets/1/CD4048BE.pdf"&
 </class>
 </classes>
 <parts>
-<part name="ACC=0_0-7" library="SamacSys_Parts" deviceset="CD4048BE" device=""/>
-<part name="ACC=0_8-15" library="SamacSys_Parts" deviceset="CD4048BE" device=""/>
+<part name="IC1" library="SamacSys_Parts" deviceset="CD4048BE" device=""/>
+<part name="IC2" library="SamacSys_Parts" deviceset="CD4048BE" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="ACC=0_0-7" gate="G$1" x="132.08" y="38.1" smashed="yes">
+<instance part="IC1" gate="G$1" x="132.08" y="38.1" smashed="yes">
 <attribute name="NAME" x="158.75" y="45.72" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="158.75" y="43.18" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="ACC=0_8-15" gate="G$1" x="134.62" y="81.28" smashed="yes">
+<instance part="IC2" gate="G$1" x="134.62" y="81.28" smashed="yes">
 <attribute name="NAME" x="161.29" y="88.9" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="161.29" y="86.36" size="1.778" layer="96" align="center-left"/>
 </instance>
@@ -275,60 +275,6 @@ Source: &lt;a href="http://componentsearchengine.com/Datasheets/1/CD4048BE.pdf"&
 <busses>
 </busses>
 <nets>
-<net name="VCC" class="0">
-<segment>
-<pinref part="ACC=0_8-15" gate="G$1" pin="VDD"/>
-<wire x1="165.1" y1="81.28" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
-<label x="167.64" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ACC=0_0-7" gate="G$1" pin="VDD"/>
-<wire x1="162.56" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
-<label x="165.1" y="38.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="ACC=0_0-7" gate="G$1" pin="KA"/>
-<wire x1="162.56" y1="22.86" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
-<label x="165.1" y="22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ACC=0_0-7" gate="G$1" pin="KC"/>
-<wire x1="162.56" y1="20.32" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
-<label x="165.1" y="20.32" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ACC=0_0-7" gate="G$1" pin="KB"/>
-<wire x1="132.08" y1="22.86" x2="129.54" y2="22.86" width="0.1524" layer="91"/>
-<label x="129.54" y="22.86" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="ACC=0_0-7" gate="G$1" pin="VSS"/>
-<wire x1="132.08" y1="20.32" x2="129.54" y2="20.32" width="0.1524" layer="91"/>
-<label x="129.54" y="20.32" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="ACC=0_8-15" gate="G$1" pin="VSS"/>
-<wire x1="134.62" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
-<label x="132.08" y="63.5" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="ACC=0_8-15" gate="G$1" pin="KB"/>
-<wire x1="134.62" y1="66.04" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
-<label x="132.08" y="66.04" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="ACC=0_8-15" gate="G$1" pin="KA"/>
-<wire x1="165.1" y1="66.04" x2="167.64" y2="66.04" width="0.1524" layer="91"/>
-<label x="167.64" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ACC=0_8-15" gate="G$1" pin="KC"/>
-<wire x1="165.1" y1="63.5" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
-<label x="167.64" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
