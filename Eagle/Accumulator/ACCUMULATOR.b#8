@@ -391,7 +391,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ACC=0_0-7" library="SamacSys_Parts" package="DIP254P762X508-16" value="CD4048BE" x="-13.97" y="6.35" smashed="yes">
+<element name="IC1" library="SamacSys_Parts" package="DIP254P762X508-16" value="CD4048BE" x="-13.97" y="6.35" smashed="yes">
 <attribute name="DESCRIPTION" value="CMOS multifunction expandable 8-input gate" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="mm" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="0" y="0" size="1.778" layer="27" display="off"/>
@@ -401,7 +401,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-22.3774" y="27.2034" size="1.27" layer="25" align="center"/>
 <attribute name="VALUE" x="-23.4442" y="1.5494" size="1.27" layer="27" align="center"/>
 </element>
-<element name="ACC=0_8-15" library="SamacSys_Parts" package="DIP254P762X508-16" value="CD4048BE" x="-13.97" y="34.29" smashed="yes">
+<element name="IC2" library="SamacSys_Parts" package="DIP254P762X508-16" value="CD4048BE" x="-13.97" y="34.29" smashed="yes">
 <attribute name="DESCRIPTION" value="CMOS multifunction expandable 8-input gate" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="mm" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="0" y="0" size="1.778" layer="27" display="off"/>
@@ -413,28 +413,6 @@ design rules under a new name.</description>
 </element>
 </elements>
 <signals>
-<signal name="VCC">
-<contactref element="ACC=0_8-15" pad="16"/>
-<contactref element="ACC=0_0-7" pad="16"/>
-<wire x1="-13.97" y1="24.13" x2="-13.97" y2="52.07" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="GND">
-<contactref element="ACC=0_0-7" pad="10"/>
-<contactref element="ACC=0_0-7" pad="9"/>
-<contactref element="ACC=0_0-7" pad="7"/>
-<contactref element="ACC=0_0-7" pad="8"/>
-<contactref element="ACC=0_8-15" pad="8"/>
-<contactref element="ACC=0_8-15" pad="7"/>
-<contactref element="ACC=0_8-15" pad="10"/>
-<contactref element="ACC=0_8-15" pad="9"/>
-<wire x1="-13.97" y1="34.29" x2="-13.97" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="-21.59" y1="36.83" x2="-13.97" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="-21.59" y1="34.29" x2="-21.59" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="-21.59" y1="8.89" x2="-21.59" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-21.59" y1="6.35" x2="-21.59" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.97" y1="6.35" x2="-21.59" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.97" y1="8.89" x2="-13.97" y2="6.35" width="0" layer="19" extent="1-1"/>
-</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
