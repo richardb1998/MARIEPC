@@ -1,12 +1,17 @@
 TODO:
-add button to memory
-add 4 additional dip switches to MAR
 figure out way to reset registers
 add HALT to prgm in MAR and IO to pause clock
 Add PRGM indicator LEDs to MAR
 silkscren board
 inspect LEDs
 Add capacitors
+Add holes for mounting boards
 
 Finish Clock
 Add IR
+
+Silkscreen ideas:
+MARIE PC info
+chips
+possibly instruction set
+leds and what they mean

@@ -383,6 +383,34 @@
 <wire x1="-4.535" y1="13.46" x2="3.3" y2="13.46" width="0.2" layer="21"/>
 <wire x1="-3.3" y1="-13.46" x2="3.3" y2="-13.46" width="0.2" layer="21"/>
 </package>
+<package name="MHPS2273N">
+<description>&lt;b&gt;MHPS2273N&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="A1" x="-2" y="-2.5" drill="0.8" diameter="1.3"/>
+<pad name="A2" x="0" y="-2.5" drill="0.8" diameter="1.3"/>
+<pad name="A3" x="2" y="-2.5" drill="0.8" diameter="1.3"/>
+<pad name="B1" x="-2" y="2.5" drill="0.8" diameter="1.3"/>
+<pad name="B2" x="0" y="2.5" drill="0.8" diameter="1.3"/>
+<pad name="B3" x="2" y="2.5" drill="0.8" diameter="1.3"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.2" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.2" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.2" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.2" layer="51"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.1" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.1" layer="21"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.1" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.1" layer="21"/>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.1" layer="51"/>
+<wire x1="4" y1="4" x2="4" y2="-4" width="0.1" layer="51"/>
+<wire x1="4" y1="-4" x2="-4" y2="-4" width="0.1" layer="51"/>
+<wire x1="-4" y1="-4" x2="-4" y2="4" width="0.1" layer="51"/>
+<wire x1="-2.1" y1="-3.5" x2="-2.1" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="-2.1" y1="-3.5" x2="-1.9" y2="-3.5" width="0.2" layer="21" curve="180"/>
+<wire x1="-1.9" y1="-3.5" x2="-1.9" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="-1.9" y1="-3.5" x2="-2.1" y2="-3.5" width="0.2" layer="21" curve="180"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -777,6 +805,26 @@ design rules under a new name.</description>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN74HC541N" x="91" y="82" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="90" y="79" size="1.27" layer="25" align="center"/>
 <attribute name="VALUE" x="91" y="85" size="1.27" layer="27" align="center"/>
+</element>
+<element name="S1" library="SamacSys_Parts" package="MHPS2273N" value="MHPS2273N" x="5" y="-5" smashed="yes">
+<attribute name="DESCRIPTION" value="Pushbutton Switches Momentary key DP" x="5" y="-5" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="13.5mm" x="5" y="-5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Apem" x="5" y="-5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="MHPS2273N" x="5" y="-5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="642-MHPS2273N" x="5" y="-5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=642-MHPS2273N" x="5" y="-5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="5" y="-5" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="5" y="-5" size="1.27" layer="27" align="center"/>
+</element>
+<element name="IC1" library="SamacSys_Parts" package="DIP794W53P254L1930H508Q14N" value="SN74HC02N" x="-6" y="2" smashed="yes">
+<attribute name="DESCRIPTION" value="Quad 2i/p NOR gate,SN74HC02N DIP14 25pcs" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="5.08mm" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SN74HC02N" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-SN74HC02N" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN74HC02N" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-6" y="2" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="-6" y="2" size="1.27" layer="27" align="center"/>
 </element>
 </elements>
 <signals>
@@ -2576,6 +2624,8 @@ design rules under a new name.</description>
 <via x="15.6972" y="40.6908" extent="1-16" drill="0.35"/>
 <via x="76.0476" y="40.5384" extent="1-16" drill="0.35"/>
 <via x="39.1668" y="72.0852" extent="1-16" drill="0.35"/>
+<contactref element="S1" pad="A1"/>
+<wire x1="3" y1="-7.5" x2="37.973" y2="6.651" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="BUS" pad="20"/>
@@ -2865,6 +2915,8 @@ design rules under a new name.</description>
 <wire x1="57.3024" y1="24.8412" x2="57.28" y2="24.69" width="0.1524" layer="16"/>
 <via x="49.0728" y="89.7636" extent="1-16" drill="0.35"/>
 <via x="60.5028" y="36.7284" extent="1-16" drill="0.35"/>
+<contactref element="S1" pad="A3"/>
+<wire x1="7" y1="-7.5" x2="5.03" y2="21.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIP0">
 <contactref element="DIP_0-7" pad="9"/>
@@ -3745,6 +3797,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$2">
 <contactref element="BOARD_WRITE" pad="3"/>
+<contactref element="S1" pad="A2"/>
+<wire x1="5" y1="-7.5" x2="10.19" y2="69.03" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
