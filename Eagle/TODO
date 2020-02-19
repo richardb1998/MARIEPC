@@ -6,6 +6,7 @@ add HALT to prgm in MAR and IO to pause clock
 Add PRGM indicator LEDs to MAR
 silkscren board
 inspect LEDs
+Add capacitors
 
 Finish Clock
 Add IR
