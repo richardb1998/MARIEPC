@@ -664,6 +664,28 @@
 <pin name="3A" x="25.4" y="-12.7" length="middle" rot="R180"/>
 <pin name="3Y" x="25.4" y="-15.24" length="middle" rot="R180"/>
 </symbol>
+<symbol name="SN74HC32N">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-17.78" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1A" x="0" y="0" length="middle"/>
+<pin name="1B" x="0" y="-2.54" length="middle"/>
+<pin name="1Y" x="0" y="-5.08" length="middle"/>
+<pin name="2A" x="0" y="-7.62" length="middle"/>
+<pin name="2B" x="0" y="-10.16" length="middle"/>
+<pin name="2Y" x="0" y="-12.7" length="middle"/>
+<pin name="GND" x="0" y="-15.24" length="middle"/>
+<pin name="VCC" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="4B" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="4A" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="4Y" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="3B" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="3A" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="3Y" x="25.4" y="-15.24" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CD4048BE" prefix="IC">
@@ -983,6 +1005,43 @@ Source: &lt;a href="http://componentsearchengine.com/Datasheets/1/SN74HC08N.pdf"
 <attribute name="MANUFACTURER_PART_NUMBER" value="SN74HC08N" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="595-SN74HC08N" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN74HC08N" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74HC32N" prefix="IC">
+<description>&lt;b&gt;QUADRUPLE 2-INPUT POSITIVE-OR GATES&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.ti.com/lit/gpn/sn74hc32"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SN74HC32N" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP794W53P254L1930H508Q14N">
+<connects>
+<connect gate="G$1" pin="1A" pad="1"/>
+<connect gate="G$1" pin="1B" pad="2"/>
+<connect gate="G$1" pin="1Y" pad="3"/>
+<connect gate="G$1" pin="2A" pad="4"/>
+<connect gate="G$1" pin="2B" pad="5"/>
+<connect gate="G$1" pin="2Y" pad="6"/>
+<connect gate="G$1" pin="3A" pad="9"/>
+<connect gate="G$1" pin="3B" pad="10"/>
+<connect gate="G$1" pin="3Y" pad="8"/>
+<connect gate="G$1" pin="4A" pad="12"/>
+<connect gate="G$1" pin="4B" pad="13"/>
+<connect gate="G$1" pin="4Y" pad="11"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="QUADRUPLE 2-INPUT POSITIVE-OR GATES" constant="no"/>
+<attribute name="HEIGHT" value="5.08mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SN74HC32N" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-SN74HC32N" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN74HC32N" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10821,6 +10880,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1"/>
+<part name="OR_GATE" library="SamacSys_Parts" deviceset="SN74HC32N" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11043,6 +11103,10 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="NAME" x="54.864" y="238.125" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="54.864" y="242.951" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="OR_GATE" gate="G$1" x="299.72" y="170.18" smashed="yes">
+<attribute name="NAME" x="321.31" y="177.8" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="321.31" y="175.26" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11131,6 +11195,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="30.48" y1="251.46" x2="30.48" y2="254" width="0.1524" layer="91"/>
 <junction x="30.48" y="251.46"/>
 <label x="30.48" y="254" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="OR_GATE" gate="G$1" pin="VCC"/>
+<wire x1="325.12" y1="170.18" x2="327.66" y2="170.18" width="0.1524" layer="91"/>
+<label x="327.66" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11313,6 +11382,30 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="30.48" y1="231.14" x2="30.48" y2="228.6" width="0.1524" layer="91"/>
 <junction x="30.48" y="231.14"/>
 <label x="30.48" y="228.6" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="OR_GATE" gate="G$1" pin="4B"/>
+<wire x1="325.12" y1="167.64" x2="327.66" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="167.64" x2="327.66" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="OR_GATE" gate="G$1" pin="4A"/>
+<wire x1="327.66" y1="165.1" x2="325.12" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="OR_GATE" gate="G$1" pin="GND"/>
+<wire x1="299.72" y1="154.94" x2="299.72" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="147.32" x2="332.74" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="147.32" x2="332.74" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="OR_GATE" gate="G$1" pin="3A"/>
+<wire x1="332.74" y1="157.48" x2="327.66" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="OR_GATE" gate="G$1" pin="3B"/>
+<wire x1="327.66" y1="157.48" x2="325.12" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="160.02" x2="327.66" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="160.02" x2="327.66" y2="157.48" width="0.1524" layer="91"/>
+<junction x="327.66" y="157.48"/>
+<wire x1="327.66" y1="165.1" x2="327.66" y2="160.02" width="0.1524" layer="91"/>
+<junction x="327.66" y="165.1"/>
+<junction x="327.66" y="160.02"/>
+<wire x1="332.74" y1="147.32" x2="335.28" y2="147.32" width="0.1524" layer="91"/>
+<junction x="332.74" y="147.32"/>
+<label x="335.28" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -12124,22 +12217,14 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="CE" class="0">
 <segment>
-<pinref part="SKIPCOND" gate="G$1" pin="Y1"/>
-<wire x1="274.32" y1="177.8" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="177.8" x2="276.86" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="SKIPCOND" gate="G$1" pin="Y2"/>
-<wire x1="276.86" y1="175.26" x2="274.32" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="SKIPCOND" gate="G$1" pin="Y3"/>
-<wire x1="274.32" y1="172.72" x2="276.86" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="172.72" x2="276.86" y2="175.26" width="0.1524" layer="91"/>
-<junction x="276.86" y="175.26"/>
-<wire x1="276.86" y1="175.26" x2="279.4" y2="175.26" width="0.1524" layer="91"/>
-<label x="279.4" y="175.26" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="BUS" gate="G$1" pin="22"/>
 <wire x1="256.54" y1="81.28" x2="254" y2="81.28" width="0.1524" layer="91"/>
 <label x="254" y="81.28" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="OR_GATE" gate="G$1" pin="2Y"/>
+<wire x1="299.72" y1="157.48" x2="297.18" y2="157.48" width="0.1524" layer="91"/>
+<label x="297.18" y="157.48" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -12464,6 +12549,41 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="LED0" gate="G$1" pin="A"/>
 <pinref part="R0" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="SKIPCOND" gate="G$1" pin="Y1"/>
+<wire x1="274.32" y1="177.8" x2="299.72" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="OR_GATE" gate="G$1" pin="1A"/>
+<wire x1="299.72" y1="177.8" x2="299.72" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="SKIPCOND" gate="G$1" pin="Y2"/>
+<wire x1="274.32" y1="175.26" x2="297.18" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="175.26" x2="297.18" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="OR_GATE" gate="G$1" pin="1B"/>
+<wire x1="297.18" y1="167.64" x2="299.72" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="OR_GATE" gate="G$1" pin="1Y"/>
+<wire x1="299.72" y1="165.1" x2="297.18" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="165.1" x2="297.18" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="OR_GATE" gate="G$1" pin="2A"/>
+<wire x1="297.18" y1="162.56" x2="299.72" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="SKIPCOND" gate="G$1" pin="Y3"/>
+<wire x1="274.32" y1="172.72" x2="292.1" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="172.72" x2="292.1" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="OR_GATE" gate="G$1" pin="2B"/>
+<wire x1="292.1" y1="160.02" x2="299.72" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

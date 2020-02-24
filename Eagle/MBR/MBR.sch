@@ -10520,6 +10520,31 @@ Source: www.kingbright.com</description>
 <sheets>
 <sheet>
 <plain>
+<text x="-78.74" y="73.66" size="1.778" layer="91">1:B0
+3:B1
+5:B2
+7:B3
+9:B4
+11:B5
+13:B6
+15:B7
+
+2:B8
+4:B9
+6:B10
+8:B11
+10:B12
+12:B13
+14:B14
+16:B16
+
+17:MBRI
+18:MBRO
+
+19:VCC
+20:GND
+
+21:CLK</text>
 </plain>
 <instances>
 <instance part="REGISTER_8-15" gate="G$1" x="259.08" y="147.32" smashed="yes">
@@ -11663,6 +11688,10 @@ Source: www.kingbright.com</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

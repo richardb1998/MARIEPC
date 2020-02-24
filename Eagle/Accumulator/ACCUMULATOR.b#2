@@ -1588,6 +1588,26 @@ type 0204, grid 7.5 mm</description>
 <rectangle x1="2.54" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
 <rectangle x1="-2.921" y1="-0.254" x2="-2.54" y2="0.254" layer="21"/>
 </package>
+<package name="C025-024X044" urn="urn:adsk.eagle:footprint:23136/1" library_version="11">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 2.5 mm, outline 2.4 x 4.4 mm</description>
+<wire x1="-2.159" y1="-0.635" x2="-2.159" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="0.635" x2="-1.651" y2="1.143" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.159" y1="-0.635" x2="-1.651" y2="-1.143" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.651" y1="1.143" x2="-1.651" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-0.635" x2="2.159" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="-1.143" x2="-1.651" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="1.143" x2="2.159" y2="0.635" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.651" y1="-1.143" x2="2.159" y2="-0.635" width="0.1524" layer="21" curve="90"/>
+<wire x1="-0.3048" y1="0.762" x2="-0.3048" y2="-0.762" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0.762" x2="0.3302" y2="-0.762" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="0" x2="0.3302" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="0" x2="-0.3048" y2="0" width="0.1524" layer="51"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="-1.778" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.778" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="0204/7" urn="urn:adsk.eagle:package:23498/2" type="model" library_version="11">
@@ -1595,6 +1615,13 @@ type 0204, grid 7.5 mm</description>
 type 0204, grid 7.5 mm</description>
 <packageinstances>
 <packageinstance name="0204/7"/>
+</packageinstances>
+</package3d>
+<package3d name="C025-024X044" urn="urn:adsk.eagle:package:23630/1" type="box" library_version="11">
+<description>CAPACITOR
+grid 2.5 mm, outline 2.4 x 4.4 mm</description>
+<packageinstances>
+<packageinstance name="C025-024X044"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2121,6 +2148,30 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="31" y="5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="29.3744" y="4.5174" size="0.9906" layer="27" ratio="10"/>
 </element>
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="" x="8" y="27" smashed="yes">
+<attribute name="NAME" x="6.222" y="28.397" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="17" x="8" y="27" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="8" y="27" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="6.222" y="24.333" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="" x="8" y="22" smashed="yes">
+<attribute name="NAME" x="6.222" y="23.397" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="17" x="8" y="22" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="8" y="22" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="6.222" y="19.333" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="" x="8" y="17" smashed="yes">
+<attribute name="NAME" x="6.222" y="18.397" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="17" x="8" y="17" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="8" y="17" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="6.222" y="14.333" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="" x="8" y="12" smashed="yes">
+<attribute name="NAME" x="6.222" y="13.397" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="17" x="8" y="12" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="8" y="12" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="6.222" y="9.333" size="1.27" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC">
@@ -2137,18 +2188,26 @@ design rules under a new name.</description>
 <contactref element="TRIPLE_AND_GATE" pad="14"/>
 <contactref element="AND_GATE" pad="14"/>
 <contactref element="BUS" pad="19"/>
-<wire x1="11.59" y1="95.65" x2="96.16" y2="77.03" width="0" layer="19" extent="1-1"/>
-<wire x1="72.02" y1="76.03" x2="11.59" y2="95.65" width="0" layer="19" extent="1-1"/>
-<wire x1="51.99" y1="76.03" x2="72.02" y2="76.03" width="0" layer="19" extent="1-1"/>
-<wire x1="73.35" y1="31.42" x2="51.99" y2="76.03" width="0" layer="19" extent="1-1"/>
-<wire x1="42.35" y1="31.85" x2="73.35" y2="31.42" width="0" layer="19" extent="1-1"/>
-<wire x1="10.16" y1="58.45" x2="42.35" y2="31.85" width="0" layer="19" extent="1-1"/>
-<wire x1="80.41" y1="84.41" x2="10.16" y2="58.45" width="0" layer="19" extent="1-1"/>
+<contactref element="C1" pad="2"/>
+<contactref element="C4" pad="2"/>
+<contactref element="C3" pad="2"/>
+<contactref element="C2" pad="2"/>
+<wire x1="80.41" y1="84.41" x2="96.16" y2="77.03" width="0" layer="19" extent="1-1"/>
 <wire x1="77.87" y1="92.03" x2="80.41" y2="84.41" width="0" layer="19" extent="1-1"/>
-<wire x1="41.79" y1="52.52" x2="80.41" y2="84.41" width="0" layer="19" extent="1-1"/>
-<wire x1="73.79" y1="52.74" x2="41.79" y2="52.52" width="0" layer="19" extent="1-1"/>
-<wire x1="49.47" y1="84.41" x2="41.79" y2="52.52" width="0" layer="19" extent="1-1"/>
+<wire x1="72.02" y1="76.03" x2="80.41" y2="84.41" width="0" layer="19" extent="1-1"/>
+<wire x1="51.99" y1="76.03" x2="72.02" y2="76.03" width="0" layer="19" extent="1-1"/>
+<wire x1="49.47" y1="84.41" x2="51.99" y2="76.03" width="0" layer="19" extent="1-1"/>
 <wire x1="46.93" y1="92.03" x2="49.47" y2="84.41" width="0" layer="19" extent="1-1"/>
+<wire x1="73.79" y1="52.74" x2="72.02" y2="76.03" width="0" layer="19" extent="1-1"/>
+<wire x1="73.35" y1="31.42" x2="73.79" y2="52.74" width="0" layer="19" extent="1-1"/>
+<wire x1="41.79" y1="52.52" x2="51.99" y2="76.03" width="0" layer="19" extent="1-1"/>
+<wire x1="42.35" y1="31.85" x2="41.79" y2="52.52" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="58.45" x2="41.79" y2="52.52" width="0" layer="19" extent="1-1"/>
+<wire x1="11.59" y1="95.65" x2="46.93" y2="92.03" width="0" layer="19" extent="1-1"/>
+<wire x1="9.27" y1="27" x2="42.35" y2="31.85" width="0" layer="19" extent="1-1"/>
+<wire x1="9.27" y1="22" x2="9.27" y2="27" width="0" layer="19" extent="1-1"/>
+<wire x1="9.27" y1="17" x2="9.27" y2="22" width="0" layer="19" extent="1-1"/>
+<wire x1="9.27" y1="12" x2="9.27" y2="17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="ACC=0_0-7" pad="10"/>
@@ -2185,6 +2244,10 @@ design rules under a new name.</description>
 <contactref element="SC_000" pad="K"/>
 <contactref element="SC_400" pad="K"/>
 <contactref element="SC_800" pad="K"/>
+<contactref element="C1" pad="1"/>
+<contactref element="C4" pad="1"/>
+<contactref element="C3" pad="1"/>
+<contactref element="C2" pad="1"/>
 <wire x1="93.11" y1="92.03" x2="95.65" y2="92.03" width="0" layer="19" extent="1-1"/>
 <wire x1="95.65" y1="84.41" x2="95.65" y2="92.03" width="0" layer="19" extent="1-1"/>
 <wire x1="93.11" y1="84.41" x2="95.65" y2="84.41" width="0" layer="19" extent="1-1"/>
@@ -2204,10 +2267,10 @@ design rules under a new name.</description>
 <wire x1="64.65" y1="44.9" x2="64.08" y2="60.79" width="0" layer="19" extent="1-1"/>
 <wire x1="73.79" y1="45.12" x2="64.65" y2="44.9" width="0" layer="19" extent="1-1"/>
 <wire x1="96.65" y1="45.12" x2="88.22" y2="61.79" width="0" layer="19" extent="1-1"/>
+<wire x1="44.05" y1="60.79" x2="64.08" y2="60.79" width="0" layer="19" extent="1-1"/>
+<wire x1="41.79" y1="44.9" x2="44.05" y2="60.79" width="0" layer="19" extent="1-1"/>
 <wire x1="65.21" y1="23.91" x2="64.65" y2="44.9" width="0" layer="19" extent="1-1"/>
 <wire x1="96.21" y1="23.48" x2="96.65" y2="45.12" width="0" layer="19" extent="1-1"/>
-<wire x1="41.79" y1="44.9" x2="64.65" y2="44.9" width="0" layer="19" extent="1-1"/>
-<wire x1="44.05" y1="60.79" x2="41.79" y2="44.9" width="0" layer="19" extent="1-1"/>
 <wire x1="12.66" y1="58.45" x2="44.05" y2="60.79" width="0" layer="19" extent="1-1"/>
 <wire x1="3.65" y1="72.79" x2="12.66" y2="58.45" width="0" layer="19" extent="1-1"/>
 <wire x1="3.65" y1="75.33" x2="3.65" y2="72.79" width="0" layer="19" extent="1-1"/>
@@ -2218,6 +2281,10 @@ design rules under a new name.</description>
 <wire x1="18.27" y1="85" x2="3.65" y2="85.49" width="0" layer="19" extent="1-1"/>
 <wire x1="18.27" y1="90" x2="18.27" y2="85" width="0" layer="19" extent="1-1"/>
 <wire x1="18.27" y1="95" x2="18.27" y2="90" width="0" layer="19" extent="1-1"/>
+<wire x1="6.73" y1="27" x2="41.79" y2="44.9" width="0" layer="19" extent="1-1"/>
+<wire x1="6.73" y1="22" x2="6.73" y2="27" width="0" layer="19" extent="1-1"/>
+<wire x1="6.73" y1="17" x2="6.73" y2="22" width="0" layer="19" extent="1-1"/>
+<wire x1="6.73" y1="12" x2="6.73" y2="17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="ACC=0_8-15" pad="15"/>

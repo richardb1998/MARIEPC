@@ -389,6 +389,31 @@
 <wire x1="7.5" y1="-2" x2="-2.5" y2="-2" width="0.1" layer="51"/>
 <wire x1="-2.5" y1="-2" x2="-2.5" y2="8" width="0.1" layer="51"/>
 </package>
+<package name="DIP813W61P254L1209H351Q8N">
+<description>&lt;b&gt;1825360-3&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="-4.065" y="3.81" drill="0.81" diameter="1.21" shape="square"/>
+<pad name="2" x="-4.065" y="1.27" drill="0.81" diameter="1.21"/>
+<pad name="3" x="-4.065" y="-1.27" drill="0.81" diameter="1.21"/>
+<pad name="4" x="-4.065" y="-3.81" drill="0.81" diameter="1.21"/>
+<pad name="5" x="4.065" y="-3.81" drill="0.81" diameter="1.21"/>
+<pad name="6" x="4.065" y="-1.27" drill="0.81" diameter="1.21"/>
+<pad name="7" x="4.065" y="1.27" drill="0.81" diameter="1.21"/>
+<pad name="8" x="4.065" y="3.81" drill="0.81" diameter="1.21"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-5.17" y1="6.295" x2="5.17" y2="6.295" width="0.05" layer="51"/>
+<wire x1="5.17" y1="6.295" x2="5.17" y2="-6.295" width="0.05" layer="51"/>
+<wire x1="5.17" y1="-6.295" x2="-5.17" y2="-6.295" width="0.05" layer="51"/>
+<wire x1="-5.17" y1="-6.295" x2="-5.17" y2="6.295" width="0.05" layer="51"/>
+<wire x1="-3.81" y1="6.045" x2="3.81" y2="6.045" width="0.1" layer="51"/>
+<wire x1="3.81" y1="6.045" x2="3.81" y2="-6.045" width="0.1" layer="51"/>
+<wire x1="3.81" y1="-6.045" x2="-3.81" y2="-6.045" width="0.1" layer="51"/>
+<wire x1="-3.81" y1="-6.045" x2="-3.81" y2="6.045" width="0.1" layer="51"/>
+<wire x1="-3.81" y1="4.775" x2="-2.54" y2="6.045" width="0.1" layer="51"/>
+<wire x1="-4.67" y1="6.045" x2="3.81" y2="6.045" width="0.2" layer="21"/>
+<wire x1="-3.81" y1="-6.045" x2="3.81" y2="-6.045" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="55959-1430">
@@ -548,6 +573,22 @@
 <pin name="4" x="30.48" y="-5.08" length="middle" rot="R180"/>
 <pin name="5" x="30.48" y="-2.54" length="middle" rot="R180"/>
 <pin name="COM_2" x="30.48" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="1825360-3">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="2" x="0" y="-2.54" length="middle"/>
+<pin name="3" x="0" y="-5.08" length="middle"/>
+<pin name="4" x="0" y="-7.62" length="middle"/>
+<pin name="8" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="7" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="6" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="5" x="20.32" y="-7.62" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -809,6 +850,37 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MHPS2285.pdf"
 <attribute name="MANUFACTURER_PART_NUMBER" value="MHPS2285" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="642-MHPS2285" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=642-MHPS2285" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1825360-3" prefix="S">
+<description>&lt;b&gt;DIP switch,PCB,SPST,4 pos,extended slide&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/1825360-3.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="1825360-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP813W61P254L1209H351Q8N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="DIP switch,PCB,SPST,4 pos,extended slide" constant="no"/>
+<attribute name="HEIGHT" value="3.51mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="TE Connectivity" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1825360-3" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="506-1825360-3" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=506-1825360-3" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7347,6 +7419,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="220"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="220"/>
 <part name="R0" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="220"/>
+<part name="DIP_8-11" library="SamacSys_Parts" deviceset="1825360-3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7402,8 +7475,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <attribute name="VALUE" x="5.08" y="-74.93" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 <instance part="DIP_0-7" gate="G$1" x="99.06" y="-99.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="91.44" y="-80.01" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="93.98" y="-80.01" size="1.778" layer="96" rot="R90" align="center-left"/>
+<attribute name="NAME" x="121.92" y="-90.17" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="129.54" y="-87.63" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 <instance part="PRGM_SWITCH" gate="G$1" x="182.88" y="-55.88" smashed="yes">
 <attribute name="NAME" x="209.55" y="-48.26" size="1.778" layer="95" align="center-left"/>
@@ -7504,6 +7577,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="R0" gate="G$1" x="116.84" y="-142.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="118.3386" y="-138.43" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="113.538" y="-138.43" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="DIP_8-11" gate="G$1" x="86.36" y="-96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="76.2" y="-85.09" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="78.74" y="-87.63" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -8133,9 +8210,24 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="DIP_0-7" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="-99.06" x2="101.6" y2="-101.6" width="0.1524" layer="91"/>
 <junction x="101.6" y="-101.6"/>
-<wire x1="99.06" y1="-101.6" x2="96.52" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="DIP_8-11" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="-96.52" x2="86.36" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-101.6" x2="88.9" y2="-101.6" width="0.1524" layer="91"/>
 <junction x="99.06" y="-101.6"/>
-<label x="96.52" y="-101.6" size="1.778" layer="95" rot="R180"/>
+<wire x1="88.9" y1="-101.6" x2="91.44" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-101.6" x2="93.98" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-101.6" x2="99.06" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-101.6" x2="99.06" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="DIP_8-11" gate="G$1" pin="4"/>
+<wire x1="93.98" y1="-96.52" x2="93.98" y2="-101.6" width="0.1524" layer="91"/>
+<junction x="93.98" y="-101.6"/>
+<pinref part="DIP_8-11" gate="G$1" pin="3"/>
+<wire x1="91.44" y1="-96.52" x2="91.44" y2="-101.6" width="0.1524" layer="91"/>
+<junction x="91.44" y="-101.6"/>
+<pinref part="DIP_8-11" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="-96.52" x2="88.9" y2="-101.6" width="0.1524" layer="91"/>
+<junction x="88.9" y="-101.6"/>
+<label x="99.06" y="-104.14" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="PRGM_SWITCH" gate="G$1" pin="COM_1"/>
@@ -8758,32 +8850,52 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="68.58" y="-30.48" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="DP9" class="0">
 <segment>
 <pinref part="BUS/PRGM_8-11" gate="G$1" pin="2B"/>
 <wire x1="68.58" y1="25.4" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
 <label x="66.04" y="25.4" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="DIP_8-11" gate="G$1" pin="6"/>
+<wire x1="91.44" y1="-76.2" x2="91.44" y2="-73.66" width="0.1524" layer="91"/>
+<label x="91.44" y="-73.66" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
-<net name="N$12" class="0">
+<net name="DP8" class="0">
 <segment>
 <pinref part="BUS/PRGM_8-11" gate="G$1" pin="1B"/>
 <wire x1="68.58" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
 <label x="66.04" y="33.02" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="DIP_8-11" gate="G$1" pin="5"/>
+<wire x1="93.98" y1="-76.2" x2="93.98" y2="-73.66" width="0.1524" layer="91"/>
+<label x="93.98" y="-73.66" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
-<net name="N$13" class="0">
+<net name="DP11" class="0">
 <segment>
 <pinref part="BUS/PRGM_8-11" gate="G$1" pin="4B"/>
 <wire x1="96.52" y1="30.48" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
 <label x="99.06" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="DIP_8-11" gate="G$1" pin="8"/>
+<wire x1="86.36" y1="-76.2" x2="86.36" y2="-73.66" width="0.1524" layer="91"/>
+<label x="86.36" y="-73.66" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
-<net name="N$14" class="0">
+<net name="DP10" class="0">
 <segment>
 <pinref part="BUS/PRGM_8-11" gate="G$1" pin="3B"/>
 <wire x1="96.52" y1="22.86" x2="99.06" y2="22.86" width="0.1524" layer="91"/>
 <label x="99.06" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DIP_8-11" gate="G$1" pin="7"/>
+<wire x1="88.9" y1="-76.2" x2="88.9" y2="-73.66" width="0.1524" layer="91"/>
+<label x="88.9" y="-73.66" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$3" class="0">
