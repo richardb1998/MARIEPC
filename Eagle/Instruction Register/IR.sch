@@ -11851,6 +11851,11 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="261.62" y="5.08"/>
 <label x="261.62" y="7.62" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="NOT_GATE_2" gate="G$1" pin="1A"/>
+<wire x1="15.24" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="91"/>
+<label x="12.7" y="-12.7" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="!ONE" class="0">
 <segment>
@@ -12951,20 +12956,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="CONTROL_LOGIC" gate="G$1" pin="9"/>
 <wire x1="27.94" y1="180.34" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
 <label x="27.94" y="182.88" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="RST" class="0">
-<segment>
-<pinref part="NOT_GATE_2" gate="G$1" pin="1A"/>
-<wire x1="15.24" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="91"/>
-<label x="12.7" y="-12.7" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="!RST" class="0">
-<segment>
-<pinref part="NOT_GATE_2" gate="G$1" pin="1Y"/>
-<wire x1="15.24" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="91"/>
-<label x="12.7" y="-15.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="!JMP" class="0">

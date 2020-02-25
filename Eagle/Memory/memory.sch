@@ -12336,6 +12336,9 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="182.88" y1="147.32" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="147.32" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
 <junction x="86.36" y="144.78"/>
+<wire x1="182.88" y1="147.32" x2="185.42" y2="147.32" width="0.1524" layer="91"/>
+<junction x="182.88" y="147.32"/>
+<label x="185.42" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="BUS/DIP_0-3" gate="G$1" pin="!G"/>
@@ -12506,6 +12509,71 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="297.18" y1="137.16" x2="309.88" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="137.16" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
 <junction x="297.18" y="137.16"/>
+</segment>
+<segment>
+<pinref part="LED15" gate="G$1" pin="C"/>
+<wire x1="132.08" y1="-129.54" x2="132.08" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-137.16" x2="142.24" y2="-137.16" width="0.1524" layer="91"/>
+<pinref part="LED0" gate="G$1" pin="C"/>
+<wire x1="142.24" y1="-137.16" x2="152.4" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="-137.16" x2="162.56" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="-137.16" x2="172.72" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="-137.16" x2="182.88" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="-137.16" x2="193.04" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="-137.16" x2="203.2" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-137.16" x2="213.36" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="-137.16" x2="223.52" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-137.16" x2="233.68" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-137.16" x2="243.84" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-137.16" x2="254" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="254" y1="-137.16" x2="264.16" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="-137.16" x2="274.32" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="-137.16" x2="284.48" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="-137.16" x2="284.48" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="-137.16" x2="284.48" y2="-129.54" width="0.1524" layer="91"/>
+<label x="287.02" y="-137.16" size="1.778" layer="95"/>
+<pinref part="LED14" gate="G$1" pin="C"/>
+<wire x1="142.24" y1="-129.54" x2="142.24" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="142.24" y="-137.16"/>
+<pinref part="LED13" gate="G$1" pin="C"/>
+<wire x1="152.4" y1="-129.54" x2="152.4" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="152.4" y="-137.16"/>
+<pinref part="LED12" gate="G$1" pin="C"/>
+<wire x1="162.56" y1="-129.54" x2="162.56" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="162.56" y="-137.16"/>
+<pinref part="LED11" gate="G$1" pin="C"/>
+<wire x1="172.72" y1="-129.54" x2="172.72" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="172.72" y="-137.16"/>
+<pinref part="LED10" gate="G$1" pin="C"/>
+<wire x1="182.88" y1="-129.54" x2="182.88" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="182.88" y="-137.16"/>
+<pinref part="LED9" gate="G$1" pin="C"/>
+<wire x1="193.04" y1="-129.54" x2="193.04" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="193.04" y="-137.16"/>
+<pinref part="LED8" gate="G$1" pin="C"/>
+<wire x1="203.2" y1="-129.54" x2="203.2" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="203.2" y="-137.16"/>
+<pinref part="LED7" gate="G$1" pin="C"/>
+<wire x1="213.36" y1="-129.54" x2="213.36" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="213.36" y="-137.16"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="274.32" y1="-129.54" x2="274.32" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="274.32" y="-137.16"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="264.16" y1="-129.54" x2="264.16" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="264.16" y="-137.16"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="254" y1="-129.54" x2="254" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="254" y="-137.16"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="243.84" y1="-129.54" x2="243.84" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="243.84" y="-137.16"/>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<wire x1="233.68" y1="-129.54" x2="233.68" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="233.68" y="-137.16"/>
+<pinref part="LED6" gate="G$1" pin="C"/>
+<wire x1="223.52" y1="-129.54" x2="223.52" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="223.52" y="-137.16"/>
 </segment>
 </net>
 <net name="DIP0" class="0">

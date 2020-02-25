@@ -11216,9 +11216,9 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="NAME" x="41.6814" y="-80.01" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="46.482" y="-80.01" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="BUS" gate="G$1" x="-43.18" y="157.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="-50.8" y="176.53" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="-48.26" y="176.53" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="BUS" gate="G$1" x="-43.18" y="180.34" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-50.8" y="161.29" size="1.778" layer="95" rot="MR270" align="center-left"/>
+<attribute name="VALUE" x="-48.26" y="161.29" size="1.778" layer="96" rot="MR270" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -11571,7 +11571,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-20.32" y1="180.34" x2="-20.32" y2="182.88" width="0.1524" layer="91"/>
 <label x="-20.32" y="182.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="BUS" gate="G$1" pin="19"/>
+<pinref part="BUS" gate="G$1" pin="20"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -11602,7 +11602,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-43.18" y1="157.48" x2="-43.18" y2="154.94" width="0.1524" layer="91"/>
 <label x="-43.18" y="154.94" size="1.778" layer="95" rot="R270"/>
-<pinref part="BUS" gate="G$1" pin="2"/>
+<pinref part="BUS" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="IR_OUT_0-7" gate="G$1" pin="Y1"/>
@@ -11830,7 +11830,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-20.32" y1="157.48" x2="-20.32" y2="154.94" width="0.1524" layer="91"/>
 <label x="-20.32" y="154.94" size="1.778" layer="95" rot="R270"/>
-<pinref part="BUS" gate="G$1" pin="20"/>
+<pinref part="BUS" gate="G$1" pin="19"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -11888,7 +11888,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-40.64" y1="157.48" x2="-40.64" y2="154.94" width="0.1524" layer="91"/>
 <label x="-40.64" y="154.94" size="1.778" layer="95" rot="R270"/>
-<pinref part="BUS" gate="G$1" pin="4"/>
+<pinref part="BUS" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="ONE_0-7" gate="G$1" pin="Y2"/>
@@ -11910,7 +11910,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-38.1" y1="157.48" x2="-38.1" y2="154.94" width="0.1524" layer="91"/>
 <label x="-38.1" y="154.94" size="1.778" layer="95" rot="R270"/>
-<pinref part="BUS" gate="G$1" pin="6"/>
+<pinref part="BUS" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="ONE_0-7" gate="G$1" pin="Y3"/>
@@ -11932,7 +11932,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-35.56" y1="157.48" x2="-35.56" y2="154.94" width="0.1524" layer="91"/>
 <label x="-35.56" y="154.94" size="1.778" layer="95" rot="R270"/>
-<pinref part="BUS" gate="G$1" pin="8"/>
+<pinref part="BUS" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <pinref part="ONE_0-7" gate="G$1" pin="Y4"/>
@@ -11954,7 +11954,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-33.02" y1="157.48" x2="-33.02" y2="154.94" width="0.1524" layer="91"/>
 <label x="-33.02" y="154.94" size="1.778" layer="95" rot="R270"/>
-<pinref part="BUS" gate="G$1" pin="10"/>
+<pinref part="BUS" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <pinref part="ONE_0-7" gate="G$1" pin="Y5"/>
@@ -11976,7 +11976,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-30.48" y1="157.48" x2="-30.48" y2="154.94" width="0.1524" layer="91"/>
 <label x="-30.48" y="154.94" size="1.778" layer="95" rot="R270"/>
-<pinref part="BUS" gate="G$1" pin="12"/>
+<pinref part="BUS" gate="G$1" pin="11"/>
 </segment>
 <segment>
 <pinref part="ONE_0-7" gate="G$1" pin="Y6"/>
@@ -11998,7 +11998,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-27.94" y1="157.48" x2="-27.94" y2="154.94" width="0.1524" layer="91"/>
 <label x="-27.94" y="154.94" size="1.778" layer="95" rot="R270"/>
-<pinref part="BUS" gate="G$1" pin="14"/>
+<pinref part="BUS" gate="G$1" pin="13"/>
 </segment>
 <segment>
 <pinref part="ONE_0-7" gate="G$1" pin="Y7"/>
@@ -12020,7 +12020,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-25.4" y1="157.48" x2="-25.4" y2="154.94" width="0.1524" layer="91"/>
 <label x="-25.4" y="154.94" size="1.778" layer="95" rot="R270"/>
-<pinref part="BUS" gate="G$1" pin="16"/>
+<pinref part="BUS" gate="G$1" pin="15"/>
 </segment>
 <segment>
 <pinref part="ONE_0-7" gate="G$1" pin="Y8"/>
@@ -12042,7 +12042,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-25.4" y1="180.34" x2="-25.4" y2="182.88" width="0.1524" layer="91"/>
 <label x="-25.4" y="182.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="BUS" gate="G$1" pin="15"/>
+<pinref part="BUS" gate="G$1" pin="16"/>
 </segment>
 <segment>
 <pinref part="ONE_8-15" gate="G$1" pin="Y8"/>
@@ -12064,7 +12064,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-27.94" y1="180.34" x2="-27.94" y2="182.88" width="0.1524" layer="91"/>
 <label x="-27.94" y="182.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="BUS" gate="G$1" pin="13"/>
+<pinref part="BUS" gate="G$1" pin="14"/>
 </segment>
 <segment>
 <pinref part="ONE_8-15" gate="G$1" pin="Y7"/>
@@ -12086,7 +12086,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-30.48" y1="180.34" x2="-30.48" y2="182.88" width="0.1524" layer="91"/>
 <label x="-30.48" y="182.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="BUS" gate="G$1" pin="11"/>
+<pinref part="BUS" gate="G$1" pin="12"/>
 </segment>
 <segment>
 <pinref part="ONE_8-15" gate="G$1" pin="Y6"/>
@@ -12108,7 +12108,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-33.02" y1="180.34" x2="-33.02" y2="182.88" width="0.1524" layer="91"/>
 <label x="-33.02" y="182.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="BUS" gate="G$1" pin="9"/>
+<pinref part="BUS" gate="G$1" pin="10"/>
 </segment>
 <segment>
 <pinref part="ONE_8-15" gate="G$1" pin="Y5"/>
@@ -12130,7 +12130,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-35.56" y1="180.34" x2="-35.56" y2="182.88" width="0.1524" layer="91"/>
 <label x="-35.56" y="182.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="BUS" gate="G$1" pin="7"/>
+<pinref part="BUS" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="ONE_8-15" gate="G$1" pin="Y4"/>
@@ -12152,7 +12152,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-38.1" y1="180.34" x2="-38.1" y2="182.88" width="0.1524" layer="91"/>
 <label x="-38.1" y="182.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="BUS" gate="G$1" pin="5"/>
+<pinref part="BUS" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <pinref part="ONE_8-15" gate="G$1" pin="Y3"/>
@@ -12174,7 +12174,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-40.64" y1="180.34" x2="-40.64" y2="182.88" width="0.1524" layer="91"/>
 <label x="-40.64" y="182.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="BUS" gate="G$1" pin="3"/>
+<pinref part="BUS" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="ONE_8-15" gate="G$1" pin="Y2"/>
@@ -12196,7 +12196,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-43.18" y1="180.34" x2="-43.18" y2="182.88" width="0.1524" layer="91"/>
 <label x="-43.18" y="182.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="BUS" gate="G$1" pin="1"/>
+<pinref part="BUS" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="ONE_8-15" gate="G$1" pin="Y1"/>
@@ -13060,7 +13060,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-22.86" y1="180.34" x2="-22.86" y2="182.88" width="0.1524" layer="91"/>
 <label x="-22.86" y="182.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="BUS" gate="G$1" pin="17"/>
+<pinref part="BUS" gate="G$1" pin="18"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -13363,7 +13363,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="-22.86" y1="157.48" x2="-22.86" y2="154.94" width="0.1524" layer="91"/>
 <label x="-22.86" y="154.94" size="1.778" layer="95" rot="R270"/>
-<pinref part="BUS" gate="G$1" pin="18"/>
+<pinref part="BUS" gate="G$1" pin="17"/>
 </segment>
 <segment>
 <pinref part="MICROCODE_COUNTER" gate="G$1" pin="CLK"/>

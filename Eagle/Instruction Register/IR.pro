@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : F:/Richard/Documents/psu/496/MARIEPC/Eagle/Instruction Register/IR.brd
+Job           : C:/Users/Richard/Documents/PSU/496/MARIEPC/Eagle/Instruction Register/IR.brd
 
-Start at      : 16:12:59 (2/22/2020)
-End at        : 16:17:53 (2/22/2020)
-Elapsed time  : 00:04:52
+Start at      : 18:16:08 (2/25/2020)
+End at        : 18:26:37 (2/25/2020)
+Elapsed time  : 00:10:26
 
-Signals       :   115   RoutingGrid: 6 mil  Layers: 2
-Connections   :   327   predefined:  0 ( 0 Vias )
+Signals       :   113   RoutingGrid: 6 mil  Layers: 2
+Connections   :   328   predefined:  0 ( 0 Vias )
 
 Router memory :   2822744
 
 Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
 
-Time per pass     :  00:00:43  00:00:36  00:00:33  00:00:30  00:00:24  00:00:15  00:00:13  00:00:14  00:00:14  00:00:14  00:00:14  00:00:15  00:00:13  00:00:14
-Number of Ripups  :         0         9         0         0         0         0         0         0         0         0         0         0         0         0
+Time per pass     :  00:01:20  00:01:00  00:00:54  00:00:44  00:00:42  00:00:39  00:00:39  00:00:38  00:00:44  00:00:45  00:00:45  00:00:36  00:00:35  00:00:25
+Number of Ripups  :         0        15         0         0         0         0         0         0         0         0         0         0         0         0
 max. Level        :         0         1         0         0         0         0         0         0         0         0         0         0         0         0
-max. Total        :         0         3         0         0         0         0         0         0         0         0         0         0         0         0
+max. Total        :         0         5         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :       133       327       322       326       327       327       327       327       327       327       327       327       327       327
-Vias              :         0       371       319       199       170       154       144       140       145       146       141       139       139       139
-Resolution        :    40.7 %   100.0 %    98.5 %    99.7 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :       133       328       324       328       328       328       328       328       328       328       328       328       328       328
+Vias              :         0       369       372       208       167       155       146       133       140       119       118       117       115       115
+Resolution        :    40.5 %   100.0 %    98.8 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished
