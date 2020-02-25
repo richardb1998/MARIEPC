@@ -3,7 +3,7 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -310,6 +310,27 @@ Hardware implementation by: Richard Bowser</text>
 <wire x1="-3.3" y1="8.575" x2="-2.03" y2="9.845" width="0.1" layer="51"/>
 <wire x1="-4.535" y1="9.845" x2="3.3" y2="9.845" width="0.2" layer="21"/>
 <wire x1="-3.3" y1="-9.845" x2="3.3" y2="-9.845" width="0.2" layer="21"/>
+</package>
+<package name="2074790002">
+<description>&lt;b&gt;207479-0002-2&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.75" diameter="2.625" shape="square"/>
+<pad name="2" x="-3.96" y="0" drill="1.75" diameter="2.625"/>
+<hole x="-5.46" y="3.4" drill="1.5"/>
+<text x="-1.98" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-1.98" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-7.975" y1="6" x2="4.015" y2="6" width="0.2" layer="51"/>
+<wire x1="4.015" y1="6" x2="4.015" y2="-6" width="0.2" layer="51"/>
+<wire x1="4.015" y1="-6" x2="-7.975" y2="-6" width="0.2" layer="51"/>
+<wire x1="-7.975" y1="-6" x2="-7.975" y2="6" width="0.2" layer="51"/>
+<wire x1="-7.975" y1="6" x2="4.015" y2="6" width="0.1" layer="21"/>
+<wire x1="4.015" y1="6" x2="4.015" y2="-6" width="0.1" layer="21"/>
+<wire x1="4.015" y1="-6" x2="-7.975" y2="-6" width="0.1" layer="21"/>
+<wire x1="-7.975" y1="-6" x2="-7.975" y2="6" width="0.1" layer="21"/>
+<wire x1="-8.975" y1="7" x2="5.015" y2="7" width="0.1" layer="51"/>
+<wire x1="5.015" y1="7" x2="5.015" y2="-7" width="0.1" layer="51"/>
+<wire x1="5.015" y1="-7" x2="-8.975" y2="-7" width="0.1" layer="51"/>
+<wire x1="-8.975" y1="-7" x2="-8.975" y2="7" width="0.1" layer="51"/>
 </package>
 </packages>
 </library>
@@ -2128,6 +2149,16 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="58" x="62" y="97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="59.333" y="99.286" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
+<element name="POWER" library="SamacSys_Parts" package="2074790002" value="207479-0002" x="-9" y="1" smashed="yes">
+<attribute name="DESCRIPTION" value="MOLEX - 207479-0002 - L1NK 396 SHROUDED HEADER ASSEMBLY-1X2 98AC8497" x="-9" y="1" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="14.1mm" x="-9" y="1" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Molex" x="-9" y="1" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="207479-0002" x="-9" y="1" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-207479-0002" x="-9" y="1" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=538-207479-0002" x="-9" y="1" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-10.98" y="1" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="-10.98" y="1" size="1.27" layer="27" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC">
@@ -2209,6 +2240,8 @@ design rules under a new name.</description>
 <wire x1="21.4884" y1="95.8596" x2="21.38" y2="95.97" width="0.1524" layer="1"/>
 <wire x1="72.9996" y1="74.5236" x2="73" y2="74.5" width="0.1524" layer="1"/>
 <via x="77.4192" y="98.1456" extent="1-16" drill="0.35"/>
+<contactref element="POWER" pad="1"/>
+<wire x1="-9" y1="1" x2="6.63" y2="90.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CLK">
 <contactref element="CLOCK" pad="3"/>
@@ -2568,6 +2601,8 @@ design rules under a new name.</description>
 <wire x1="66.1416" y1="58.3692" x2="66" y2="58.27" width="0.1524" layer="16"/>
 <via x="19.6596" y="96.774" extent="1-16" drill="0.35"/>
 <via x="78.0288" y="17.8308" extent="1-16" drill="0.35"/>
+<contactref element="POWER" pad="2"/>
+<wire x1="-12.96" y1="1" x2="8.634" y2="35.742" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!CLK">
 <contactref element="CLOCK" pad="4"/>

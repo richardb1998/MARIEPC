@@ -301,6 +301,27 @@
 <wire x1="-4.535" y1="9.845" x2="3.3" y2="9.845" width="0.2" layer="21"/>
 <wire x1="-3.3" y1="-9.845" x2="3.3" y2="-9.845" width="0.2" layer="21"/>
 </package>
+<package name="2074790002">
+<description>&lt;b&gt;207479-0002-2&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.75" diameter="2.625" shape="square"/>
+<pad name="2" x="-3.96" y="0" drill="1.75" diameter="2.625"/>
+<hole x="-5.46" y="3.4" drill="1.5"/>
+<text x="-1.98" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-1.98" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-7.975" y1="6" x2="4.015" y2="6" width="0.2" layer="51"/>
+<wire x1="4.015" y1="6" x2="4.015" y2="-6" width="0.2" layer="51"/>
+<wire x1="4.015" y1="-6" x2="-7.975" y2="-6" width="0.2" layer="51"/>
+<wire x1="-7.975" y1="-6" x2="-7.975" y2="6" width="0.2" layer="51"/>
+<wire x1="-7.975" y1="6" x2="4.015" y2="6" width="0.1" layer="21"/>
+<wire x1="4.015" y1="6" x2="4.015" y2="-6" width="0.1" layer="21"/>
+<wire x1="4.015" y1="-6" x2="-7.975" y2="-6" width="0.1" layer="21"/>
+<wire x1="-7.975" y1="-6" x2="-7.975" y2="6" width="0.1" layer="21"/>
+<wire x1="-8.975" y1="7" x2="5.015" y2="7" width="0.1" layer="51"/>
+<wire x1="5.015" y1="7" x2="5.015" y2="-7" width="0.1" layer="51"/>
+<wire x1="5.015" y1="-7" x2="-8.975" y2="-7" width="0.1" layer="51"/>
+<wire x1="-8.975" y1="-7" x2="-8.975" y2="7" width="0.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="55959-2430">
@@ -453,6 +474,16 @@
 <pin name="3B" x="25.4" y="-10.16" length="middle" rot="R180"/>
 <pin name="3A" x="25.4" y="-12.7" length="middle" rot="R180"/>
 <pin name="3Y" x="25.4" y="-15.24" length="middle" rot="R180"/>
+</symbol>
+<symbol name="207479-0002">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="2" x="20.32" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -709,6 +740,31 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/sn74hc32"&gt; Datasheet &lt;/a&gt;
 <attribute name="MANUFACTURER_PART_NUMBER" value="SN74HC32N" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="595-SN74HC32N" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN74HC32N" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="207479-0002" prefix="J">
+<description>&lt;b&gt;MOLEX - 207479-0002 - L1NK 396 SHROUDED HEADER ASSEMBLY-1X2 98AC8497&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/207479-0002.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="207479-0002" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2074790002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="MOLEX - 207479-0002 - L1NK 396 SHROUDED HEADER ASSEMBLY-1X2 98AC8497" constant="no"/>
+<attribute name="HEIGHT" value="14.1mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Molex" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="207479-0002" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-207479-0002" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=538-207479-0002" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7413,6 +7469,7 @@ high speed (Philips)</description>
 <part name="PD15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="10k"/>
 <part name="OR_GATE" library="SamacSys_Parts" deviceset="SN74HC32N" device=""/>
 <part name="FLYBACK_DIODE" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2"/>
+<part name="POWER" library="SamacSys_Parts" deviceset="207479-0002" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7667,6 +7724,10 @@ high speed (Philips)</description>
 <attribute name="NAME" x="80.7974" y="132.08" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="83.5914" y="132.08" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="POWER" gate="G$1" x="2.54" y="170.18" smashed="yes">
+<attribute name="NAME" x="19.05" y="177.8" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="19.05" y="175.26" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7716,6 +7777,11 @@ high speed (Philips)</description>
 <pinref part="OR_GATE" gate="G$1" pin="VCC"/>
 <wire x1="60.96" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
 <label x="63.5" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="170.18" x2="0" y2="170.18" width="0.1524" layer="91"/>
+<label x="0" y="170.18" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="CLK" class="0">
@@ -7977,6 +8043,11 @@ high speed (Philips)</description>
 <wire x1="63.5" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
 <junction x="63.5" y="114.3"/>
 <label x="66.04" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="170.18" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
+<label x="25.4" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!CLK" class="0">
