@@ -1432,6 +1432,26 @@ type 0204, grid 7.5 mm</description>
 <rectangle x1="2.54" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
 <rectangle x1="-2.921" y1="-0.254" x2="-2.54" y2="0.254" layer="21"/>
 </package>
+<package name="C025-024X044" urn="urn:adsk.eagle:footprint:23136/1" library_version="11">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 2.5 mm, outline 2.4 x 4.4 mm</description>
+<wire x1="-2.159" y1="-0.635" x2="-2.159" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="0.635" x2="-1.651" y2="1.143" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.159" y1="-0.635" x2="-1.651" y2="-1.143" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.651" y1="1.143" x2="-1.651" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-0.635" x2="2.159" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="-1.143" x2="-1.651" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="1.143" x2="2.159" y2="0.635" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.651" y1="-1.143" x2="2.159" y2="-0.635" width="0.1524" layer="21" curve="90"/>
+<wire x1="-0.3048" y1="0.762" x2="-0.3048" y2="-0.762" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0.762" x2="0.3302" y2="-0.762" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="0" x2="0.3302" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="0" x2="-0.3048" y2="0" width="0.1524" layer="51"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="-1.778" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.778" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="0204/7" urn="urn:adsk.eagle:package:23498/2" type="model" library_version="11">
@@ -1439,6 +1459,13 @@ type 0204, grid 7.5 mm</description>
 type 0204, grid 7.5 mm</description>
 <packageinstances>
 <packageinstance name="0204/7"/>
+</packageinstances>
+</package3d>
+<package3d name="C025-024X044" urn="urn:adsk.eagle:package:23630/1" type="box" library_version="11">
+<description>CAPACITOR
+grid 2.5 mm, outline 2.4 x 4.4 mm</description>
+<packageinstances>
+<packageinstance name="C025-024X044"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1925,6 +1952,30 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="97" x="34" y="8" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="35.905" y="6.349" size="1.27" layer="27" ratio="10"/>
 </element>
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="" x="13" y="28" smashed="yes">
+<attribute name="NAME" x="11.222" y="29.397" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="17" x="13" y="28" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="13" y="28" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="11.222" y="25.333" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="" x="13" y="23" smashed="yes">
+<attribute name="NAME" x="11.222" y="24.397" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="17" x="13" y="23" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="13" y="23" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="11.222" y="20.333" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="" x="13" y="18" smashed="yes">
+<attribute name="NAME" x="11.222" y="19.397" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="17" x="13" y="18" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="13" y="18" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="11.222" y="15.333" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="" x="13" y="13" smashed="yes">
+<attribute name="NAME" x="11.222" y="14.397" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="17" x="13" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="13" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="11.222" y="10.333" size="1.27" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -2038,19 +2089,6 @@ design rules under a new name.</description>
 <contactref element="REGISTER_8-15" pad="3"/>
 <wire x1="64.63" y1="29.13" x2="68.92" y2="70.61" width="0" layer="19" extent="1-1"/>
 <wire x1="13.16" y1="41.57" x2="64.63" y2="29.13" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$5">
-<contactref element="BOARD_CONNECTOR" pad="19"/>
-<contactref element="OUTPUT_8-15" pad="20"/>
-<contactref element="CLOCK_GATE" pad="14"/>
-<contactref element="OUTPUT_0-7" pad="20"/>
-<contactref element="REGISTER_8-15" pad="20"/>
-<contactref element="REGISTER_0-7" pad="20"/>
-<wire x1="68.92" y1="75.69" x2="93.22" y2="75.69" width="0" layer="19" extent="1-1"/>
-<wire x1="95.03" y1="34.21" x2="93.22" y2="75.69" width="0" layer="19" extent="1-1"/>
-<wire x1="72.25" y1="34.21" x2="95.03" y2="34.21" width="0" layer="19" extent="1-1"/>
-<wire x1="15.63" y1="95.78" x2="68.92" y2="75.69" width="0" layer="19" extent="1-1"/>
-<wire x1="10.66" y1="59.57" x2="15.63" y2="95.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="BOARD_CONNECTOR" pad="17"/>
@@ -2304,7 +2342,32 @@ design rules under a new name.</description>
 <contactref element="LED15" pad="A"/>
 <wire x1="32.73" y1="13" x2="49.19" y2="21" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$19">
+<signal name="VCC">
+<contactref element="C1" pad="2"/>
+<contactref element="C4" pad="2"/>
+<contactref element="C3" pad="2"/>
+<contactref element="C2" pad="2"/>
+<contactref element="BOARD_CONNECTOR" pad="19"/>
+<contactref element="OUTPUT_8-15" pad="20"/>
+<contactref element="CLOCK_GATE" pad="14"/>
+<contactref element="OUTPUT_0-7" pad="20"/>
+<contactref element="REGISTER_8-15" pad="20"/>
+<contactref element="REGISTER_0-7" pad="20"/>
+<wire x1="68.92" y1="75.69" x2="93.22" y2="75.69" width="0" layer="19" extent="1-1"/>
+<wire x1="95.03" y1="34.21" x2="93.22" y2="75.69" width="0" layer="19" extent="1-1"/>
+<wire x1="72.25" y1="34.21" x2="95.03" y2="34.21" width="0" layer="19" extent="1-1"/>
+<wire x1="15.63" y1="95.78" x2="68.92" y2="75.69" width="0" layer="19" extent="1-1"/>
+<wire x1="10.66" y1="59.57" x2="15.63" y2="95.78" width="0" layer="19" extent="1-1"/>
+<wire x1="14.27" y1="28" x2="10.66" y2="59.57" width="0" layer="19" extent="1-1"/>
+<wire x1="14.27" y1="23" x2="14.27" y2="28" width="0" layer="19" extent="1-1"/>
+<wire x1="14.27" y1="18" x2="14.27" y2="23" width="0" layer="19" extent="1-1"/>
+<wire x1="14.27" y1="13" x2="14.27" y2="18" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GND">
+<contactref element="C1" pad="1"/>
+<contactref element="C4" pad="1"/>
+<contactref element="C3" pad="1"/>
+<contactref element="C2" pad="1"/>
 <contactref element="CLOCK_GATE" pad="13"/>
 <contactref element="CLOCK_GATE" pad="9"/>
 <contactref element="CLOCK_GATE" pad="10"/>
@@ -2364,6 +2427,10 @@ design rules under a new name.</description>
 <wire x1="7.69" y1="88.16" x2="7.69" y2="85.62" width="0" layer="19" extent="1-1"/>
 <wire x1="7.69" y1="80.54" x2="7.69" y2="85.62" width="0" layer="19" extent="1-1"/>
 <wire x1="13.16" y1="59.57" x2="7.69" y2="80.54" width="0" layer="19" extent="1-1"/>
+<wire x1="11.73" y1="28" x2="35.27" y2="8" width="0" layer="19" extent="1-1"/>
+<wire x1="11.73" y1="23" x2="11.73" y2="28" width="0" layer="19" extent="1-1"/>
+<wire x1="11.73" y1="18" x2="11.73" y2="23" width="0" layer="19" extent="1-1"/>
+<wire x1="11.73" y1="13" x2="11.73" y2="18" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

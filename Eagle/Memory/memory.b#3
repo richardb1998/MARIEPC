@@ -816,6 +816,16 @@ design rules under a new name.</description>
 <attribute name="NAME" x="5" y="-5" size="1.27" layer="25" align="center"/>
 <attribute name="VALUE" x="5" y="-5" size="1.27" layer="27" align="center"/>
 </element>
+<element name="IC1" library="SamacSys_Parts" package="DIP794W53P254L1930H508Q14N" value="SN74HC02N" x="-6" y="2" smashed="yes">
+<attribute name="DESCRIPTION" value="Quad 2i/p NOR gate,SN74HC02N DIP14 25pcs" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="5.08mm" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SN74HC02N" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-SN74HC02N" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN74HC02N" x="-6" y="2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-6" y="2" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="-6" y="2" size="1.27" layer="27" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="B0">

@@ -10714,6 +10714,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1"/>
+<part name="LEDPRGM" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="RED"/>
+<part name="LEDRUN" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="GREEN"/>
+<part name="RPRGM" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="220"/>
+<part name="RRUN" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="220"/>
 </parts>
 <sheets>
 <sheet>
@@ -10892,6 +10896,22 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C4" gate="G$1" x="243.84" y="-17.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="242.824" y="-18.415" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="242.824" y="-13.589" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="LEDPRGM" gate="G$1" x="149.86" y="-149.86" smashed="yes">
+<attribute name="NAME" x="153.416" y="-154.432" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="155.575" y="-154.432" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="LEDRUN" gate="G$1" x="167.64" y="-149.86" smashed="yes">
+<attribute name="NAME" x="171.196" y="-154.432" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="173.355" y="-154.432" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="RPRGM" gate="G$1" x="149.86" y="-142.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="148.3614" y="-146.05" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="153.162" y="-146.05" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="RRUN" gate="G$1" x="167.64" y="-142.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="166.1414" y="-146.05" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="170.942" y="-146.05" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -11136,6 +11156,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="BUS" gate="G$1" pin="17"/>
 <wire x1="193.04" y1="15.24" x2="190.5" y2="15.24" width="0.1524" layer="91"/>
 <label x="190.5" y="15.24" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="RPRGM" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="-137.16" x2="149.86" y2="-134.62" width="0.1524" layer="91"/>
+<label x="149.86" y="-134.62" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="ARD0" class="0">
@@ -11754,6 +11779,15 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="116.84" y1="-160.02" x2="121.92" y2="-160.02" width="0.1524" layer="91"/>
 <junction x="116.84" y="-160.02"/>
 <label x="121.92" y="-160.02" size="1.778" layer="95"/>
+<wire x1="116.84" y1="-160.02" x2="116.84" y2="-167.64" width="0.1524" layer="91"/>
+<pinref part="LEDPRGM" gate="G$1" pin="C"/>
+<wire x1="149.86" y1="-154.94" x2="149.86" y2="-157.48" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-157.48" x2="167.64" y2="-157.48" width="0.1524" layer="91"/>
+<pinref part="LEDRUN" gate="G$1" pin="C"/>
+<wire x1="167.64" y1="-157.48" x2="167.64" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="-167.64" x2="149.86" y2="-167.64" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-167.64" x2="149.86" y2="-157.48" width="0.1524" layer="91"/>
+<junction x="149.86" y="-157.48"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -12322,6 +12356,26 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="LED0" gate="G$1" pin="A"/>
 <pinref part="R0" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="LEDPRGM" gate="G$1" pin="A"/>
+<pinref part="RPRGM" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="LEDRUN" gate="G$1" pin="A"/>
+<pinref part="RRUN" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="RRUN" gate="G$1" pin="2"/>
+<pinref part="PRGM_SWITCH" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="-137.16" x2="167.64" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="-55.88" x2="182.88" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
