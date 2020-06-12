@@ -7555,26 +7555,9 @@ Source: www.kingbright.com</description>
 <wire x1="-10.16" y1="68.58" x2="-10.16" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-10.16" y="71.12"/>
 <wire x1="-10.16" y1="68.58" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="60.96" x2="-43.18" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-10.16" y="68.58"/>
-<pinref part="BUFFER_8-11" gate="G$1" pin="Y5"/>
-<wire x1="-40.64" y1="76.2" x2="-43.18" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="76.2" x2="-43.18" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="BUFFER_8-11" gate="G$1" pin="Y6"/>
-<wire x1="-43.18" y1="73.66" x2="-40.64" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="BUFFER_8-11" gate="G$1" pin="Y7"/>
-<wire x1="-40.64" y1="71.12" x2="-43.18" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="71.12" x2="-43.18" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-43.18" y="73.66"/>
-<pinref part="BUFFER_8-11" gate="G$1" pin="Y8"/>
-<wire x1="-40.64" y1="68.58" x2="-43.18" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="68.58" x2="-43.18" y2="71.12" width="0.1524" layer="91"/>
-<junction x="-43.18" y="71.12"/>
-<wire x1="-43.18" y1="60.96" x2="-43.18" y2="68.58" width="0.1524" layer="91"/>
-<junction x="-43.18" y="68.58"/>
 <wire x1="-10.16" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="60.96" x2="2.54" y2="5.08" width="0.1524" layer="91"/>
-<junction x="-10.16" y="60.96"/>
 <pinref part="BUFFER_0-8" gate="G$1" pin="GND"/>
 <wire x1="2.54" y1="5.08" x2="-10.16" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="5.08" x2="2.54" y2="-20.32" width="0.1524" layer="91"/>
@@ -7829,6 +7812,54 @@ Source: www.kingbright.com</description>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="LED11" gate="G$1" pin="A"/>
 <wire x1="121.92" y1="-60.96" x2="121.92" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="B12" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="10"/>
+<wire x1="-152.4" y1="48.26" x2="-154.94" y2="48.26" width="0.1524" layer="91"/>
+<label x="-154.94" y="48.26" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="BUFFER_8-11" gate="G$1" pin="Y5"/>
+<wire x1="-40.64" y1="76.2" x2="-43.18" y2="76.2" width="0.1524" layer="91"/>
+<label x="-43.18" y="76.2" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="B13" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="12"/>
+<wire x1="-152.4" y1="45.72" x2="-154.94" y2="45.72" width="0.1524" layer="91"/>
+<label x="-154.94" y="45.72" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="BUFFER_8-11" gate="G$1" pin="Y6"/>
+<wire x1="-40.64" y1="73.66" x2="-43.18" y2="73.66" width="0.1524" layer="91"/>
+<label x="-43.18" y="73.66" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="B14" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="14"/>
+<wire x1="-152.4" y1="43.18" x2="-154.94" y2="43.18" width="0.1524" layer="91"/>
+<label x="-154.94" y="43.18" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="BUFFER_8-11" gate="G$1" pin="Y7"/>
+<wire x1="-40.64" y1="71.12" x2="-43.18" y2="71.12" width="0.1524" layer="91"/>
+<label x="-43.18" y="71.12" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="B15" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="16"/>
+<wire x1="-152.4" y1="40.64" x2="-154.94" y2="40.64" width="0.1524" layer="91"/>
+<label x="-154.94" y="40.64" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="BUFFER_8-11" gate="G$1" pin="Y8"/>
+<wire x1="-40.64" y1="68.58" x2="-43.18" y2="68.58" width="0.1524" layer="91"/>
+<label x="-43.18" y="68.58" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
