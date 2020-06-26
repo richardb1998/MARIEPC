@@ -1,0 +1,36 @@
+Partlist
+
+Exported from clock.sch at 3/30/2020 3:56 PM
+
+EAGLE Version 9.5.2 Copyright (c) 1988-2019 Autodesk, Inc.
+
+Assembly variant: 
+
+Part          Value             Device            Package                        Library        Sheet
+
+555_RUN       LMC555CN_NOPB     LMC555CN_NOPB     DIP794W53P254L959H508Q8N       SamacSys_Parts 1
+555_SEL       LMC555CN_NOPB     LMC555CN_NOPB     DIP794W53P254L959H508Q8N       SamacSys_Parts 1
+555_STEP      LMC555CN_NOPB     LMC555CN_NOPB     DIP794W53P254L959H508Q8N       SamacSys_Parts 1
+AND_GATE      SN74HC08N         SN74HC08N         DIP794W53P254L1930H508Q14N     SamacSys_Parts 1
+BUS           55959-0830        55959-0830        SHDR8W65P250X200_2X4_1140X1400 SamacSys_Parts 1
+C1            0.1uf             C-US025-024X044   C025-024X044                   rcl            1
+C2            0.1uf             C-US025-024X044   C025-024X044                   rcl            1
+C3            0.01uf            C-US025-024X044   C025-024X044                   rcl            1
+C4            0.01uf            C-US025-024X044   C025-024X044                   rcl            1
+C5            0.01uf            C-US025-024X044   C025-024X044                   rcl            1
+C6            0.1uf             C-US025-024X044   C025-024X044                   rcl            1
+C7            1uf               CPOL-USE5-5       E5-5                           rcl            1
+C8                              C-US025-024X044   C025-024X044                   rcl            1
+C9                              C-US025-024X044   C025-024X044                   rcl            1
+LEDCLK        BLUE              LED3MM            LED3MM                         led            1
+NOT_GATE      SN74HC04N         SN74HC04N         DIP794W53P254L1930H508Q14N     SamacSys_Parts 1
+OR_GATE       SN74HC32N         SN74HC32N         DIP794W53P254L1930H508Q14N     SamacSys_Parts 1
+POTENTIOMETER PDB12-M4251-105BF PDB12-M4251-105BF PDB12M4251105BF                SamacSys_Parts 1
+R1            1k                R-US_0204/7       0204/7                         rcl            1
+R3            1k                R-US_0204/7       0204/7                         rcl            1
+R4            1k                R-US_0204/7       0204/7                         rcl            1
+R5            1k                R-US_0204/7       0204/7                         rcl            1
+R6            1M                R-US_0204/7       0204/7                         rcl            1
+RCLK          220               R-US_0204/7       0204/7                         rcl            1
+RUN/STEP      MHPS2285          MHPS2285          MHPS2285                       SamacSys_Parts 1
+STEP          MHPS2273N         MHPS2273N         MHPS2273N                      SamacSys_Parts 1
